@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AFABB3BE-7F79-445A-8DE3-B2143918A457}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudentScoreInfoManager</RootNamespace>
+    <AssemblyName>StudentScoreInfoManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdministratorModule\AdministratorFile\AdminiBMFile\BrowseAndModify.aspx" />
+    <Content Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\AdminiRegiste.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="约束.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiBMFile\BrowseAndModify.aspx.cs">
+      <DependentUpon>BrowseAndModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiBMFile\BrowseAndModify.aspx.designer.cs">
+      <DependentUpon>BrowseAndModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiBMFile\IBMView.cs" />
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\AdminiRegiste.aspx.cs">
+      <DependentUpon>AdminiRegiste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\AdminiRegiste.aspx.designer.cs">
+      <DependentUpon>AdminiRegiste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\IRegisteView.cs" />
+    <Compile Include="AdministratorModule\AdministratorFile\AdministratorPresenter.cs" />
+    <Compile Include="AdministratorModule\AdministratorFile\IAdministratorPresenter.cs" />
+    <Compile Include="AdministratorModule\AdministratorFile\IAdministratorView.cs" />
+    <Compile Include="AdministratorModule\MessageFile\IMessagePresenter.cs" />
+    <Compile Include="AdministratorModule\MessageFile\IMessageView.cs" />
+    <Compile Include="AdministratorModule\MessageFile\MessagePresenter.cs" />
+    <Compile Include="AdministratorModule\StudentFile\IStudentPresenter.cs" />
+    <Compile Include="AdministratorModule\StudentFile\IStudentView.cs" />
+    <Compile Include="AdministratorModule\StudentFile\StudentPresenter.cs" />
+    <Compile Include="Base\BasePresenter.cs" />
+    <Compile Include="Base\BaseView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\IBasePresenter.cs" />
+    <Compile Include="Base\IBaseView.cs" />
+    <Compile Include="LinqClass\Administrator.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Administrator.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LinqClass\Message.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Message.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LinqClass\Student.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Student.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LinqClass\Administrator.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Administrator.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LinqClass\Student.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Student.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LinqClass\Message.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Message.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LinqClass\Administrator.dbml.layout">
+      <DependentUpon>Administrator.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LinqClass\Student.dbml.layout">
+      <DependentUpon>Student.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LinqClass\Message.dbml.layout">
+      <DependentUpon>Message.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AdministratorModule\MessageFile\MessageBrowseFile\" />
+    <Folder Include="AdministratorModule\MessageFile\MessageReceiveFile\" />
+    <Folder Include="AdministratorModule\MessageFile\MessageSendFile\" />
+    <Folder Include="AdministratorModule\StudentFile\StudentBrowseFile\" />
+    <Folder Include="AdministratorModule\StudentFile\StudentDeleteFile\" />
+    <Folder Include="AdministratorModule\StudentFile\StudentModifyFile\" />
+    <Folder Include="AdministratorModule\StudentFile\StudentQueryFile\" />
+    <Folder Include="AdministratorModule\StudentFile\StudentRegisteFile\" />
+    <Folder Include="StudentModule\" />
+    <Folder Include="TeacherModule\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54636</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54636/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

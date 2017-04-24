@@ -1,0 +1,6 @@
+E:\课程设计\StudentScoreInfoManager\StudentScoreInfoManager\obj\Debug\StudentScoreInfoManager.csprojResolveAssemblyReference.cache
+E:\课程设计\StudentScoreInfoManager\StudentScoreInfoManager\bin\StudentScoreInfoManager.dll.config
+E:\课程设计\StudentScoreInfoManager\StudentScoreInfoManager\bin\StudentScoreInfoManager.dll
+E:\课程设计\StudentScoreInfoManager\StudentScoreInfoManager\bin\StudentScoreInfoManager.pdb
+E:\课程设计\StudentScoreInfoManager\StudentScoreInfoManager\obj\Debug\StudentScoreInfoManager.dll
+E:\课程设计\StudentScoreInfoManager\StudentScoreInfoManager\obj\Debug\StudentScoreInfoManager.pdb

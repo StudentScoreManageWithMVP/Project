@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Student_Score_Info" Class="StudentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-LRDJV6K;Initial Catalog=Student_Score_Info;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Student_Score_InfoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Student" Member="Student">
+    <Type Name="Student">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Sex" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="Profession" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nation" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PoliticalOutlook" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="UsedName" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="IdentityCardNum" Type="System.String" DbType="NVarChar(18)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OriginPlace" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Health" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="EnrollmenYear" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HomeAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Mail" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="StudentId" Type="System.String" DbType="NChar(8)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
