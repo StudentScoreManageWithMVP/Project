@@ -60,8 +60,18 @@
   <ItemGroup>
     <Content Include="AdministratorModule\AdministratorFile\AdminiBMFile\BrowseAndModify.aspx" />
     <Content Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\AdminiRegiste.aspx" />
+    <Content Include="AdministratorModule\MessageFile\MessageBrowseFile\MessageBrowse.aspx" />
+    <Content Include="AdministratorModule\MessageFile\MessageReceiveFile\MessageReceive.aspx" />
+    <Content Include="AdministratorModule\MessageFile\MessageSendFile\MessageSend.aspx" />
+    <Content Include="AdministratorModule\NetManageFile\NetManageView.aspx" />
+    <Content Include="AdministratorModule\StudentFile\StudentBrowseFile\StudentBrowse.aspx" />
+    <Content Include="AdministratorModule\StudentFile\StudentDeleteFile\StudentDelete.aspx" />
+    <Content Include="AdministratorModule\StudentFile\StudentModifyFile\StudentModify.aspx" />
+    <Content Include="AdministratorModule\StudentFile\StudentQueryFile\StudentQuery.aspx" />
+    <Content Include="AdministratorModule\StudentFile\StudentRegisteFile\StudentRegiste.aspx" />
     <Content Include="Web.config" />
     <Content Include="约束.txt" />
+    <Content Include="项目进度.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdministratorModule\AdministratorFile\AdminiBMFile\BrowseAndModify.aspx.cs">
@@ -85,10 +95,90 @@
     <Compile Include="AdministratorModule\AdministratorFile\IAdministratorView.cs" />
     <Compile Include="AdministratorModule\MessageFile\IMessagePresenter.cs" />
     <Compile Include="AdministratorModule\MessageFile\IMessageView.cs" />
+    <Compile Include="AdministratorModule\MessageFile\MessageBrowseFile\IBrowseView.cs" />
+    <Compile Include="AdministratorModule\MessageFile\MessageBrowseFile\MessageBrowse.aspx.cs">
+      <DependentUpon>MessageBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\MessageFile\MessageBrowseFile\MessageBrowse.aspx.designer.cs">
+      <DependentUpon>MessageBrowse.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorModule\MessageFile\MessagePresenter.cs" />
+    <Compile Include="AdministratorModule\MessageFile\MessageReceiveFile\IReceiveView.cs" />
+    <Compile Include="AdministratorModule\MessageFile\MessageReceiveFile\MessageReceive.aspx.cs">
+      <DependentUpon>MessageReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\MessageFile\MessageReceiveFile\MessageReceive.aspx.designer.cs">
+      <DependentUpon>MessageReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorModule\MessageFile\MessageSendFile\ISendView.cs" />
+    <Compile Include="AdministratorModule\MessageFile\MessageSendFile\MessageSend.aspx.cs">
+      <DependentUpon>MessageSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\MessageFile\MessageSendFile\MessageSend.aspx.designer.cs">
+      <DependentUpon>MessageSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorModule\MessageFile\MessageView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\NetManageFile\INetManagePresenter.cs" />
+    <Compile Include="AdministratorModule\NetManageFile\INetManageView.cs" />
+    <Compile Include="AdministratorModule\NetManageFile\NetManagePresenter.cs" />
+    <Compile Include="AdministratorModule\NetManageFile\NetManageView.aspx.cs">
+      <DependentUpon>NetManageView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\NetManageFile\NetManageView.aspx.designer.cs">
+      <DependentUpon>NetManageView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorModule\StudentFile\IStudentPresenter.cs" />
     <Compile Include="AdministratorModule\StudentFile\IStudentView.cs" />
+    <Compile Include="AdministratorModule\StudentFile\StudentBrowseFile\IBrowseView.cs" />
+    <Compile Include="AdministratorModule\StudentFile\StudentBrowseFile\StudentBrowse.aspx.cs">
+      <DependentUpon>StudentBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentBrowseFile\StudentBrowse.aspx.designer.cs">
+      <DependentUpon>StudentBrowse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentDeleteFile\IDeleteView.cs" />
+    <Compile Include="AdministratorModule\StudentFile\StudentDeleteFile\StudentDelete.aspx.cs">
+      <DependentUpon>StudentDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentDeleteFile\StudentDelete.aspx.designer.cs">
+      <DependentUpon>StudentDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentModifyFile\IModifyView.cs" />
+    <Compile Include="AdministratorModule\StudentFile\StudentModifyFile\StudentModify.aspx.cs">
+      <DependentUpon>StudentModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentModifyFile\StudentModify.aspx.designer.cs">
+      <DependentUpon>StudentModify.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorModule\StudentFile\StudentPresenter.cs" />
+    <Compile Include="AdministratorModule\StudentFile\StudentQueryFile\IQueryView.cs" />
+    <Compile Include="AdministratorModule\StudentFile\StudentQueryFile\StudentQuery.aspx.cs">
+      <DependentUpon>StudentQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentQueryFile\StudentQuery.aspx.designer.cs">
+      <DependentUpon>StudentQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentRegisteFile\IRegisteView.cs" />
+    <Compile Include="AdministratorModule\StudentFile\StudentRegisteFile\StudentRegiste.aspx.cs">
+      <DependentUpon>StudentRegiste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentRegisteFile\StudentRegiste.aspx.designer.cs">
+      <DependentUpon>StudentRegiste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Base\BasePresenter.cs" />
     <Compile Include="Base\BaseView.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -104,6 +194,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Message.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LinqClass\Notice.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Notice.dbml</DependentUpon>
     </Compile>
     <Compile Include="LinqClass\Student.designer.cs">
       <AutoGen>True</AutoGen>
@@ -126,6 +221,11 @@
     <Content Include="LinqClass\Message.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>Message.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LinqClass\Notice.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Notice.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
     <None Include="Web.Debug.config">
@@ -154,16 +254,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AdministratorModule\MessageFile\MessageBrowseFile\" />
-    <Folder Include="AdministratorModule\MessageFile\MessageReceiveFile\" />
-    <Folder Include="AdministratorModule\MessageFile\MessageSendFile\" />
-    <Folder Include="AdministratorModule\StudentFile\StudentBrowseFile\" />
-    <Folder Include="AdministratorModule\StudentFile\StudentDeleteFile\" />
-    <Folder Include="AdministratorModule\StudentFile\StudentModifyFile\" />
-    <Folder Include="AdministratorModule\StudentFile\StudentQueryFile\" />
-    <Folder Include="AdministratorModule\StudentFile\StudentRegisteFile\" />
     <Folder Include="StudentModule\" />
     <Folder Include="TeacherModule\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LinqClass\Notice.dbml.layout">
+      <DependentUpon>Notice.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
