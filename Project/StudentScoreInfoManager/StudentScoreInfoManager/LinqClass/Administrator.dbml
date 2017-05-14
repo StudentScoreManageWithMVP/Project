@@ -9,6 +9,8 @@
       <Column Name="Age" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
       <Column Name="OriginPlace" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Brief_Introducation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImageUrl" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

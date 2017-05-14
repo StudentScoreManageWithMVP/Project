@@ -58,8 +58,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdministratorModule\AdministratorFile\AdminiBMFile\BrowseAndModify.aspx" />
+    <Content Include="AdministratorModule\AdministratorFile\AdminiBrowseFile\BrowseView.aspx" />
+    <Content Include="AdministratorModule\AdministratorFile\AdminiModifyFile\ModifyView.aspx" />
     <Content Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\AdminiRegiste.aspx" />
+    <Content Include="AdministratorModule\CourseFile\CourseBrowseModifyFile\BrowseModify.aspx" />
     <Content Include="AdministratorModule\MessageFile\MessageBrowseFile\MessageBrowse.aspx" />
     <Content Include="AdministratorModule\MessageFile\MessageReceiveFile\MessageReceive.aspx" />
     <Content Include="AdministratorModule\MessageFile\MessageSendFile\MessageSend.aspx" />
@@ -69,19 +71,74 @@
     <Content Include="AdministratorModule\StudentFile\StudentModifyFile\StudentModify.aspx" />
     <Content Include="AdministratorModule\StudentFile\StudentQueryFile\StudentQuery.aspx" />
     <Content Include="AdministratorModule\StudentFile\StudentRegisteFile\StudentRegiste.aspx" />
+    <Content Include="Css\AdminiInfoBrowse.css" />
+    <Content Include="Css\bootstrap.css" />
+    <Content Include="Css\bootstrap.min.css" />
+    <Content Include="Css\cm-overlay.css" />
+    <Content Include="Css\font-awesome.css" />
+    <Content Include="Css\font-awesome.min.css" />
+    <Content Include="Css\main.css" />
+    <Content Include="Css\owl.carousel.css" />
+    <Content Include="Css\owl.theme.css" />
+    <Content Include="Css\sidebar-menu.css" />
+    <Content Include="Css\style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\arrows.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\f1.jpg" />
+    <Content Include="images\f2.jpg" />
+    <Content Include="images\f3.jpg" />
+    <Content Include="images\f4.jpg" />
+    <Content Include="images\next.png" />
+    <Content Include="images\p1.jpg" />
+    <Content Include="images\p10.jpg" />
+    <Content Include="images\p2.jpg" />
+    <Content Include="images\p3.jpg" />
+    <Content Include="images\p4.jpg" />
+    <Content Include="images\p5.jpg" />
+    <Content Include="images\p6.jpg" />
+    <Content Include="images\p7.jpg" />
+    <Content Include="images\p8.jpg" />
+    <Content Include="images\p9.jpg" />
+    <Content Include="images\prev.png" />
+    <Content Include="images\s2.jpg" />
+    <Content Include="Script\bars.js" />
+    <Content Include="Script\bootstrap.js" />
+    <Content Include="Script\jarallax.js" />
+    <Content Include="Script\jquery-1.11.1.min.js" />
+    <Content Include="Script\jquery.cm-overlay.js" />
+    <Content Include="Script\jquery.min.js" />
+    <Content Include="Script\jquery.mobile.custom.min.js" />
+    <Content Include="Script\jquery.tools.min.js" />
+    <Content Include="Script\main.js" />
+    <Content Include="Script\owl.carousel.js" />
+    <Content Include="Script\responsiveslides.min.js" />
+    <Content Include="Script\sidebar-menu.js" />
+    <Content Include="Script\SmoothScroll.min.js" />
     <Content Include="Web.config" />
     <Content Include="约束.txt" />
     <Content Include="项目进度.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdministratorModule\AdministratorFile\AdminiBMFile\BrowseAndModify.aspx.cs">
-      <DependentUpon>BrowseAndModify.aspx</DependentUpon>
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiBrowseFile\BrowseView.aspx.cs">
+      <DependentUpon>BrowseView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdministratorModule\AdministratorFile\AdminiBMFile\BrowseAndModify.aspx.designer.cs">
-      <DependentUpon>BrowseAndModify.aspx</DependentUpon>
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiBrowseFile\BrowseView.aspx.designer.cs">
+      <DependentUpon>BrowseView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdministratorModule\AdministratorFile\AdminiBMFile\IBMView.cs" />
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiBrowseFile\IBrowseView.cs" />
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiModifyFile\IModifyView.cs" />
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiModifyFile\ModifyView.aspx.cs">
+      <DependentUpon>ModifyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiModifyFile\ModifyView.aspx.designer.cs">
+      <DependentUpon>ModifyView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\AdminiRegiste.aspx.cs">
       <DependentUpon>AdminiRegiste.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -91,8 +148,18 @@
     </Compile>
     <Compile Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\IRegisteView.cs" />
     <Compile Include="AdministratorModule\AdministratorFile\AdministratorPresenter.cs" />
+    <Compile Include="AdministratorModule\AdministratorFile\AdministratorView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="AdministratorModule\AdministratorFile\IAdministratorPresenter.cs" />
     <Compile Include="AdministratorModule\AdministratorFile\IAdministratorView.cs" />
+    <Compile Include="AdministratorModule\CourseFile\CourseBrowseModifyFile\BrowseModify.aspx.cs">
+      <DependentUpon>BrowseModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\CourseFile\CourseBrowseModifyFile\BrowseModify.aspx.designer.cs">
+      <DependentUpon>BrowseModify.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorModule\CourseFile\CourseBrowseModifyFile\IBrowseModifyView.cs" />
     <Compile Include="AdministratorModule\CourseFile\CourseQueryDeleteFile\IQueryDeleteView.cs" />
     <Compile Include="AdministratorModule\CourseFile\CourseRegister\IRegisterView.cs" />
@@ -242,6 +309,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Student.dbml</DependentUpon>
     </Compile>
+    <Compile Include="MasterForm\Management.Master.cs">
+      <DependentUpon>Management.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterForm\Management.Master.designer.cs">
+      <DependentUpon>Management.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -275,6 +349,12 @@
       <LastGenOutput>Course.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="MasterForm\Management.Master" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

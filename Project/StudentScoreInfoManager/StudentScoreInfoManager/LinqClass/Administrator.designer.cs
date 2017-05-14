@@ -94,6 +94,10 @@ namespace StudentScoreInfoManager.LinqClass
 		
 		private string _OriginPlace;
 		
+		private string _Brief_Introducation;
+		
+		private string _ImageUrl;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -112,6 +116,10 @@ namespace StudentScoreInfoManager.LinqClass
     partial void OnPhoneNumberChanged();
     partial void OnOriginPlaceChanging(string value);
     partial void OnOriginPlaceChanged();
+    partial void OnBrief_IntroducationChanging(string value);
+    partial void OnBrief_IntroducationChanged();
+    partial void OnImageUrlChanging(string value);
+    partial void OnImageUrlChanged();
     #endregion
 		
 		public Administrator()
@@ -255,6 +263,46 @@ namespace StudentScoreInfoManager.LinqClass
 					this._OriginPlace = value;
 					this.SendPropertyChanged("OriginPlace");
 					this.OnOriginPlaceChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Brief_Introducation", DbType="NVarChar(MAX)")]
+		public string Brief_Introducation
+		{
+			get
+			{
+				return this._Brief_Introducation;
+			}
+			set
+			{
+				if ((this._Brief_Introducation != value))
+				{
+					this.OnBrief_IntroducationChanging(value);
+					this.SendPropertyChanging();
+					this._Brief_Introducation = value;
+					this.SendPropertyChanged("Brief_Introducation");
+					this.OnBrief_IntroducationChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ImageUrl", DbType="NVarChar(MAX)")]
+		public string ImageUrl
+		{
+			get
+			{
+				return this._ImageUrl;
+			}
+			set
+			{
+				if ((this._ImageUrl != value))
+				{
+					this.OnImageUrlChanging(value);
+					this.SendPropertyChanging();
+					this._ImageUrl = value;
+					this.SendPropertyChanged("ImageUrl");
+					this.OnImageUrlChanged();
 				}
 			}
 		}

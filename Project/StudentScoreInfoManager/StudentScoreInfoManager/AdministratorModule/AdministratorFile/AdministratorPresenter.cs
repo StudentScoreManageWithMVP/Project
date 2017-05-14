@@ -5,6 +5,7 @@ using System.Web;
 using StudentScoreInfoManager.Base;
 using StudentScoreInfoManager.LinqClass;
 using StudentScoreInfoManager.AdministratorModule.AdministratorFile.AdminiBMFile;
+using StudentScoreInfoManager.AdministratorModule.AdministratorFile.AdminiModifyFile;
 
 namespace StudentScoreInfoManager.AdministratorModule.AdministratorFile
 {
@@ -39,7 +40,7 @@ namespace StudentScoreInfoManager.AdministratorModule.AdministratorFile
             }
             else
             {
-                ((IBMView)mbaseView).ShowAdminiInfo(admi);
+                ((IBrowseView)mbaseView).ShowAdminiInfo(admi);
             }
         }
 
@@ -49,7 +50,7 @@ namespace StudentScoreInfoManager.AdministratorModule.AdministratorFile
         /// <param name="administrator">管理员修改后的信息</param>
         public void ModifyAInfo(Administrator administrator)
         {
-            if (mbaseView is IBMView)
+            if (mbaseView is IModifyView)
             {
                 Administrator ad = GetAdminiById(administrator.Id);
                 #region 修改判断
@@ -79,7 +80,7 @@ namespace StudentScoreInfoManager.AdministratorModule.AdministratorFile
                 }
                 #endregion
                 mdataContext.SubmitChanges();
-                ((IBMView)mbaseView).ModifySuccess();
+                
             }
 
         }
@@ -105,6 +106,17 @@ namespace StudentScoreInfoManager.AdministratorModule.AdministratorFile
         {
             var administrator = (from a in mdataContext.Administrator
                                  where a.Id == AdminiId
+                                 select a).FirstOrDefault();
+            return administrator;
+        }
+        /// <summary>
+        /// 通过id获取管理员
+        /// </summary>
+        /// <param name="AdministratorId"></param>
+        /// <returns></returns>
+        public Administrator GetAdministratorById(int AdministratorId) {
+            var administrator = (from a in mdataContext.Administrator
+                                 where a.Id == AdministratorId
                                  select a).FirstOrDefault();
             return administrator;
         }

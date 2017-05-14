@@ -12,5 +12,7 @@ namespace StudentScoreInfoManager.AdministratorModule.AdministratorFile
         void Browse(int AdministratorId);
         void ModifyAInfo(Administrator administrator);
         void InsertInfo(Administrator administrator);
+        //通过id获取管理员信息
+        Administrator GetAdministratorById(int AdministratorId);
     }
 }

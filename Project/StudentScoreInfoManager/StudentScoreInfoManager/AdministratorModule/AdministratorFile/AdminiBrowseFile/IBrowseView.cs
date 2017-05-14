@@ -7,7 +7,7 @@ using StudentScoreInfoManager.LinqClass;
 
 namespace StudentScoreInfoManager.AdministratorModule.AdministratorFile.AdminiBMFile
 {
-    public interface IBMView:IAdministratorView
+    public interface IBrowseView : IAdministratorView
     {
         void ShowAdminiInfo(Administrator administrator);
         void ModifySuccess();
