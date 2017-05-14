@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Student_Score_Info" Class="ProfessionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-LRDJV6K;Initial Catalog=Student_Score_Info;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Student_Score_InfoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Profession" Member="Profession">
+    <Type Name="Profession">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodeId" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="ProfessionName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

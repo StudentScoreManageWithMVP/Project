@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Student_Score_Info" Class="CourseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-LRDJV6K;Initial Catalog=Student_Score_Info;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Student_Score_InfoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Course" Member="Course">
+    <Type Name="Course">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Pro_Id" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="Pro_Name" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Pro_KindId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Pro_Credit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pro_Time" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pro_PeopleLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
