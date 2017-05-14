@@ -8,5 +8,6 @@ namespace StudentScoreInfoManager.AdministratorModule.CourseFile.CourseQueryDele
 {
     public interface IQueryDeleteView:ICourseView
     {
+
     }
 }

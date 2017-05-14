@@ -190,13 +190,19 @@
     </Compile>
     <Compile Include="AdministratorModule\StudentScoreFile\IStudentScorePresenter.cs" />
     <Compile Include="AdministratorModule\StudentScoreFile\IStudentScoreView.cs" />
+    <Compile Include="AdministratorModule\StudentScoreFile\StudentSBrowseModifyFile\IBrowseModifyView.cs" />
     <Compile Include="AdministratorModule\StudentScoreFile\StudentScoreView.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdministratorModule\StudentScoreFile\StudentScorePresenter.cs" />
+    <Compile Include="AdministratorModule\StudentScoreFile\StudentSQueryDeleteFile\IQueryDeleteView.cs" />
+    <Compile Include="AdministratorModule\StudentScoreFile\StudentSRegisterFile\IRegisterView.cs" />
     <Compile Include="AdministratorModule\TeacherFile\ITeacherPresenter.cs" />
     <Compile Include="AdministratorModule\TeacherFile\ITeacherView.cs" />
+    <Compile Include="AdministratorModule\TeacherFile\TeacherBrowseModifyFile\IBrowseModifyView.cs" />
     <Compile Include="AdministratorModule\TeacherFile\TeacherPresenter.cs" />
+    <Compile Include="AdministratorModule\TeacherFile\TeacherQueryDeleteFile\IQueryDeleteView.cs" />
+    <Compile Include="AdministratorModule\TeacherFile\TeacherRegisterFile\IRegisterView.cs" />
     <Compile Include="AdministratorModule\TeacherFile\TeacherView.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -295,12 +301,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AdministratorModule\StudentScoreFile\StudentSBrowseModifyFile\" />
-    <Folder Include="AdministratorModule\StudentScoreFile\StudentSQueryDeleteFile\" />
-    <Folder Include="AdministratorModule\StudentScoreFile\StudentSRegisterFile\" />
-    <Folder Include="AdministratorModule\TeacherFile\TeacherBrowseModifyFile\" />
-    <Folder Include="AdministratorModule\TeacherFile\TeacherQueryDeleteFile\" />
-    <Folder Include="AdministratorModule\TeacherFile\TeacherRegisterFile\" />
     <Folder Include="StudentModule\" />
     <Folder Include="TeacherModule\" />
   </ItemGroup>
