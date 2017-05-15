@@ -17,6 +17,9 @@
 <link href="../Css/font-awesome.min.css" rel="stylesheet" media="screen"/>
 <link rel="stylesheet" href="../Css/sidebar-menu.css"/>
 <style type="text/css">
+    body {
+        background-color:#F6F6F6;
+    }
 .main-sidebar{
 	position: absolute;
 	top: 0;
@@ -42,8 +45,8 @@
 		  <i class="fa fa-dashboard"></i> <span>管理员</span> <i class="fa fa-angle-right pull-right"></i>
 		</a>
 		<ul class="treeview-menu">
-		  <li><a href="#"><i class="fa fa-circle-o"></i> 个人信息浏览</a></li>
-		  <li><a href="#"><i class="fa fa-circle-o"></i> 管理员注册</a></li>
+		  <li><a href="/AdministratorModule/AdministratorFile/AdminiBrowseFile/BrowseView.aspx"><i class="fa fa-circle-o"></i> 个人信息浏览</a></li>
+		  <li><a href="/AdministratorModule/AdministratorFile/AdminiRegisteFile/RegisterView.aspx"><i class="fa fa-circle-o"></i> 管理员注册</a></li>
 		</ul>
 	  </li>
       <li class="treeview">

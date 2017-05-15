@@ -114,6 +114,10 @@ namespace StudentScoreInfoManager.LinqClass
 		
 		private string _StudentId;
 		
+		private string _ImageUrl;
+		
+		private System.Nullable<int> _Age;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -152,6 +156,10 @@ namespace StudentScoreInfoManager.LinqClass
     partial void OnMailChanged();
     partial void OnStudentIdChanging(string value);
     partial void OnStudentIdChanged();
+    partial void OnImageUrlChanging(string value);
+    partial void OnImageUrlChanged();
+    partial void OnAgeChanging(System.Nullable<int> value);
+    partial void OnAgeChanged();
     #endregion
 		
 		public Student()
@@ -179,7 +187,7 @@ namespace StudentScoreInfoManager.LinqClass
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(40)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(40) NOT NULL", CanBeNull=false)]
 		public string Name
 		{
 			get
@@ -219,7 +227,7 @@ namespace StudentScoreInfoManager.LinqClass
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Sex", DbType="NVarChar(2)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Sex", DbType="NVarChar(2) NOT NULL", CanBeNull=false)]
 		public string Sex
 		{
 			get
@@ -239,7 +247,7 @@ namespace StudentScoreInfoManager.LinqClass
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Profession", DbType="NVarChar(50)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Profession", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
 		public string Profession
 		{
 			get
@@ -259,7 +267,7 @@ namespace StudentScoreInfoManager.LinqClass
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nation", DbType="NVarChar(20)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nation", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
 		public string Nation
 		{
 			get
@@ -279,7 +287,7 @@ namespace StudentScoreInfoManager.LinqClass
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PoliticalOutlook", DbType="NVarChar(10)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PoliticalOutlook", DbType="NVarChar(10) NOT NULL", CanBeNull=false)]
 		public string PoliticalOutlook
 		{
 			get
@@ -319,7 +327,7 @@ namespace StudentScoreInfoManager.LinqClass
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdentityCardNum", DbType="NVarChar(18)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdentityCardNum", DbType="NVarChar(18) NOT NULL", CanBeNull=false)]
 		public string IdentityCardNum
 		{
 			get
@@ -479,7 +487,7 @@ namespace StudentScoreInfoManager.LinqClass
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StudentId", DbType="NChar(8)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StudentId", DbType="NChar(8) NOT NULL", CanBeNull=false)]
 		public string StudentId
 		{
 			get
@@ -495,6 +503,46 @@ namespace StudentScoreInfoManager.LinqClass
 					this._StudentId = value;
 					this.SendPropertyChanged("StudentId");
 					this.OnStudentIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ImageUrl", DbType="NVarChar(MAX)")]
+		public string ImageUrl
+		{
+			get
+			{
+				return this._ImageUrl;
+			}
+			set
+			{
+				if ((this._ImageUrl != value))
+				{
+					this.OnImageUrlChanging(value);
+					this.SendPropertyChanging();
+					this._ImageUrl = value;
+					this.SendPropertyChanged("ImageUrl");
+					this.OnImageUrlChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Age", DbType="Int")]
+		public System.Nullable<int> Age
+		{
+			get
+			{
+				return this._Age;
+			}
+			set
+			{
+				if ((this._Age != value))
+				{
+					this.OnAgeChanging(value);
+					this.SendPropertyChanging();
+					this._Age = value;
+					this.SendPropertyChanged("Age");
+					this.OnAgeChanged();
 				}
 			}
 		}

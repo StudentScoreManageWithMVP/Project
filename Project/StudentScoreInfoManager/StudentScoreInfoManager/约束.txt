@@ -1,3 +1,4 @@
 ﻿1->Administrator
 2->Teacher
 3->Student
+网站主色调：#222d32

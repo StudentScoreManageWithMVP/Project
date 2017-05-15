@@ -3,14 +3,14 @@
   <Table Name="dbo.Student" Member="Student">
     <Type Name="Student">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(40) NOT NULL" CanBeNull="false" />
       <Column Name="Password" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
-      <Column Name="Sex" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
-      <Column Name="Profession" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Nation" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="PoliticalOutlook" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Sex" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Profession" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nation" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PoliticalOutlook" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="UsedName" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
-      <Column Name="IdentityCardNum" Type="System.String" DbType="NVarChar(18)" CanBeNull="true" />
+      <Column Name="IdentityCardNum" Type="System.String" DbType="NVarChar(18) NOT NULL" CanBeNull="false" />
       <Column Name="Birthday" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="OriginPlace" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Health" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
@@ -18,7 +18,9 @@
       <Column Name="HomeAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
       <Column Name="Mail" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="StudentId" Type="System.String" DbType="NChar(8)" CanBeNull="true" />
+      <Column Name="StudentId" Type="System.String" DbType="NChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="ImageUrl" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Age" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

@@ -79,8 +79,15 @@ namespace StudentScoreInfoManager.AdministratorModule.AdministratorFile
                     ad.Age = administrator.Age;
                 }
                 #endregion
-                mdataContext.SubmitChanges();
-                
+                try
+                {
+                    mdataContext.SubmitChanges();
+                    ((IModifyView)mbaseView).ModifySession(administrator);
+                    mbaseView.Alert("修改成功");
+                }
+                catch (Exception e) {
+                    mbaseView.Alert(e.ToString());
+                }                
             }
 
         }

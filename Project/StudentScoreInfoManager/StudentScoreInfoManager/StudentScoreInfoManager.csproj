@@ -60,23 +60,27 @@
   <ItemGroup>
     <Content Include="AdministratorModule\AdministratorFile\AdminiBrowseFile\BrowseView.aspx" />
     <Content Include="AdministratorModule\AdministratorFile\AdminiModifyFile\ModifyView.aspx" />
-    <Content Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\AdminiRegiste.aspx" />
+    <Content Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\RegisterView.aspx" />
     <Content Include="AdministratorModule\CourseFile\CourseBrowseModifyFile\BrowseModify.aspx" />
     <Content Include="AdministratorModule\MessageFile\MessageBrowseFile\MessageBrowse.aspx" />
     <Content Include="AdministratorModule\MessageFile\MessageReceiveFile\MessageReceive.aspx" />
     <Content Include="AdministratorModule\MessageFile\MessageSendFile\MessageSend.aspx" />
     <Content Include="AdministratorModule\NetManageFile\NetManageView.aspx" />
-    <Content Include="AdministratorModule\StudentFile\StudentBrowseFile\StudentBrowse.aspx" />
+    <Content Include="AdministratorModule\StudentFile\StudentBrowseFile\BrowseView.aspx" />
     <Content Include="AdministratorModule\StudentFile\StudentDeleteFile\StudentDelete.aspx" />
     <Content Include="AdministratorModule\StudentFile\StudentModifyFile\StudentModify.aspx" />
     <Content Include="AdministratorModule\StudentFile\StudentQueryFile\StudentQuery.aspx" />
     <Content Include="AdministratorModule\StudentFile\StudentRegisteFile\StudentRegiste.aspx" />
     <Content Include="Css\AdminiInfoBrowse.css" />
+    <Content Include="Css\AdminiInfoModify.css" />
+    <Content Include="Css\StudentBrowse.css" />
+    <Content Include="Script\AdminiRegister.js" />
     <Content Include="Css\bootstrap.css" />
     <Content Include="Css\bootstrap.min.css" />
     <Content Include="Css\cm-overlay.css" />
     <Content Include="Css\font-awesome.css" />
     <Content Include="Css\font-awesome.min.css" />
+    <Content Include="Css\jquery-labelauty.css" />
     <Content Include="Css\main.css" />
     <Content Include="Css\owl.carousel.css" />
     <Content Include="Css\owl.theme.css" />
@@ -92,6 +96,8 @@
     <Content Include="images\f2.jpg" />
     <Content Include="images\f3.jpg" />
     <Content Include="images\f4.jpg" />
+    <Content Include="images\input-checked.png" />
+    <Content Include="images\input-unchecked.png" />
     <Content Include="images\next.png" />
     <Content Include="images\p1.jpg" />
     <Content Include="images\p10.jpg" />
@@ -109,6 +115,8 @@
     <Content Include="Script\bootstrap.js" />
     <Content Include="Script\jarallax.js" />
     <Content Include="Script\jquery-1.11.1.min.js" />
+    <Content Include="Script\jquery-1.8.3.min.js" />
+    <Content Include="Script\jquery-labelauty.js" />
     <Content Include="Script\jquery.cm-overlay.js" />
     <Content Include="Script\jquery.min.js" />
     <Content Include="Script\jquery.mobile.custom.min.js" />
@@ -139,14 +147,14 @@
     <Compile Include="AdministratorModule\AdministratorFile\AdminiModifyFile\ModifyView.aspx.designer.cs">
       <DependentUpon>ModifyView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\AdminiRegiste.aspx.cs">
-      <DependentUpon>AdminiRegiste.aspx</DependentUpon>
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\IRegisteView.cs" />
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\RegisterView.aspx.cs">
+      <DependentUpon>RegisterView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\AdminiRegiste.aspx.designer.cs">
-      <DependentUpon>AdminiRegiste.aspx</DependentUpon>
+    <Compile Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\RegisterView.aspx.designer.cs">
+      <DependentUpon>RegisterView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdministratorModule\AdministratorFile\AdminiRegisteFile\IRegisteView.cs" />
     <Compile Include="AdministratorModule\AdministratorFile\AdministratorPresenter.cs" />
     <Compile Include="AdministratorModule\AdministratorFile\AdministratorView.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -211,14 +219,14 @@
     </Compile>
     <Compile Include="AdministratorModule\StudentFile\IStudentPresenter.cs" />
     <Compile Include="AdministratorModule\StudentFile\IStudentView.cs" />
-    <Compile Include="AdministratorModule\StudentFile\StudentBrowseFile\IBrowseView.cs" />
-    <Compile Include="AdministratorModule\StudentFile\StudentBrowseFile\StudentBrowse.aspx.cs">
-      <DependentUpon>StudentBrowse.aspx</DependentUpon>
+    <Compile Include="AdministratorModule\StudentFile\StudentBrowseFile\BrowseView.aspx.cs">
+      <DependentUpon>BrowseView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdministratorModule\StudentFile\StudentBrowseFile\StudentBrowse.aspx.designer.cs">
-      <DependentUpon>StudentBrowse.aspx</DependentUpon>
+    <Compile Include="AdministratorModule\StudentFile\StudentBrowseFile\BrowseView.aspx.designer.cs">
+      <DependentUpon>BrowseView.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentBrowseFile\IBrowseView.cs" />
     <Compile Include="AdministratorModule\StudentFile\StudentDeleteFile\IDeleteView.cs" />
     <Compile Include="AdministratorModule\StudentFile\StudentDeleteFile\StudentDelete.aspx.cs">
       <DependentUpon>StudentDelete.aspx</DependentUpon>

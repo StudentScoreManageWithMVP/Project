@@ -37,6 +37,15 @@ namespace StudentScoreInfoManager.AdministratorModule.StudentFile
             }
         }
         /// <summary>
+        /// 处理浏览学生信息逻辑
+        /// </summary>
+        /// <param name="StudentId"></param>
+        /// <returns>学生类实体对象</returns>
+        public Student GetStudentInfoById(int StudentId) {
+            var student = mdataContext.Student.FirstOrDefault<Student>(s => s.Id == StudentId);
+            return student;
+        }
+        /// <summary>
         /// 处理修改学生信息的逻辑
         /// </summary>
         /// <param name="student"></param>

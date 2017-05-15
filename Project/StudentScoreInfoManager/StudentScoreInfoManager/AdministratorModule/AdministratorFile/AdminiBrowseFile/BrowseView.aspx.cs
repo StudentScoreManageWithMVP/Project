@@ -16,7 +16,6 @@ namespace StudentScoreInfoManager.AdministratorModule.AdministratorFile.AdminiBM
         {
             mPresenter = AdministratorPresenter<IBrowseView>.GetInstance();
             mPresenter.BindView(this);
-            mPresenter.Browse(1);
         }
 
         public void ShowAdminiInfo(Administrator administrator) { 

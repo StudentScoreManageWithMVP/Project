@@ -28,10 +28,4 @@
         <br />
         <a href="../AdminiModifyFile/ModifyView.aspx">修改</a>
     </div>
-    <!--<script src="/Script/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $('.admini_main_content a').click(function () {
-            $.session.set('administoridId','');
-        });
-    </script>-->
 </asp:Content>

@@ -8,5 +8,6 @@ namespace StudentScoreInfoManager.AdministratorModule.CourseFile
 {
     public class CourseView:BaseView,ICourseView
     {
+
     }
 }

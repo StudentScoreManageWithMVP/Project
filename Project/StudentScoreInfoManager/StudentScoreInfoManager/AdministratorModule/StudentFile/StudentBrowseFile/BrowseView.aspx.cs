@@ -8,17 +8,16 @@ using StudentScoreInfoManager.LinqClass;
 
 namespace StudentScoreInfoManager.AdministratorModule.StudentFile.StudentBrowseFile
 {
-    public partial class StudentBrowse : StudentView,IBrowseView
+    public partial class BrowseView : StudentView,IBrowseView
     {
-        private IStudentPresenter<IBrowseView> mPresenter;
+        protected IStudentPresenter<IBrowseView> mPresenter;
         protected void Page_Load(object sender, EventArgs e)
         {
             mPresenter = StudentPresenter<IBrowseView>.GetInstance();
             mPresenter.BindView(this);
-            mPresenter.GetStudentInfo(1);
+            
         }
-        public void ShowStudentInfo(Student student) {
-            l1.Text = student.Id + student.Name + student.EnrollmenYear;
-        }
+
+        public void ShowStudentInfo(Student student) { }
     }
 }
