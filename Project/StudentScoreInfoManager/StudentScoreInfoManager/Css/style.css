@@ -286,17 +286,17 @@ body{
   -webkit-transition: width 1s;
           transition: width 1s;
 }
-.skills-bar .b_label, .skills-bar .bar_label_min, .skills-bar .bar_label_max, .skills-bar .b_tooltip span {
+.skills-bar .b_input, .skills-bar .bar_input_min, .skills-bar .bar_input_max, .skills-bar .b_tooltip span {
     color: #2f2f2f;
     font-size: .9em;
 	font-weight:600;
 }
-.skills-bar .bar_label_max {
+.skills-bar .bar_input_max {
     position: absolute;
     right: 0;
     margin: 1em 0 0 0;
 }
-.skills-bar .bar_label_min {
+.skills-bar .bar_input_min {
     position: absolute;
     left: 0;
     margin: 1em 0 0 0;
@@ -663,7 +663,7 @@ body{
     resize: none;
 } 
 /*-- input-effect --*/
-.styled-input input:focus ~ label, .styled-input input:valid ~ label,.styled-input textarea:focus ~ label ,.styled-input textarea:valid ~ label{
+.styled-input input:focus ~ input, .styled-input input:valid ~ input,.styled-input textarea:focus ~ input ,.styled-input textarea:valid ~ input{
     font-size: .9em;
     color: #333333;
     top: -1.3em;
@@ -687,7 +687,7 @@ body{
 	width:100% !important;
 	margin-left:0 !important;
 }
-.styled-input label {
+.styled-input input {
 	color: #8c8c8c;
     padding: 0.5em .9em;
     position: absolute;

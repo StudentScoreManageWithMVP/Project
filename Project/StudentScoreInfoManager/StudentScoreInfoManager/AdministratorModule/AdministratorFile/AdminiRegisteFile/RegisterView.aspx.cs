@@ -29,7 +29,6 @@ namespace StudentScoreInfoManager.AdministratorModule.AdministratorFile.AdminiRe
             admini.OriginPlace = Request.Form["originPlaceInput"].ToString();
             admini.Brief_Introducation = Request.Form["brifeInput"].ToString();
             admini.ImageUrl = file.Value;
-            Alert(admini.ImageUrl);
             mPresenter.InsertInfo(admini);
         }
 

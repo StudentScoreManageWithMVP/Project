@@ -6,24 +6,6 @@
     <link href="../../../Css/StudentBrowse.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!--[Id]               INT           IDENTITY (1, 1) NOT NULL,
-    [Name]             NVARCHAR (40) NULL,
-    [Password]         NVARCHAR (11) NOT NULL,
-    [Sex]              NVARCHAR (2)  NULL,
-    [Profession]       NVARCHAR (50) NULL,
-    [Nation]           NVARCHAR (20) NULL,
-    [PoliticalOutlook] NVARCHAR (10) NULL,
-    [UsedName]         NVARCHAR (40) NULL,
-    [IdentityCardNum]  NVARCHAR (18) NULL,
-    [Birthday]         DATETIME      NULL,
-    [OriginPlace]      NVARCHAR (50) NULL,
-    [Health]           NVARCHAR (10) NULL,
-    [EnrollmenYear]    DATETIME      NULL,
-    [HomeAddress]      NVARCHAR (50) NULL,
-    [PhoneNumber]      NVARCHAR (11) NULL,
-    [Mail]             NVARCHAR (20) NULL,
-    [StudentId]        NCHAR (8)     NULL,
-    CONSTRAINT [PK_STUDENTS] PRIMARY KEY CLUSTERED ([Id] ASC)-->
     <%var student = mPresenter.GetStudentInfoById(1);
       Session["Student"] = student;
       %>
@@ -64,6 +46,6 @@
         <br />
         <label>邮箱地址:<%=student.Mail %></label>
         <br />
-        <a href="../StudentModifyFile/StudentModify.aspx">修改</a>
+        <a href="../StudentModifyFile/WebForm1.aspx">修改</a>
     </div>
 </asp:Content>

@@ -15,6 +15,7 @@ namespace StudentScoreInfoManager.AdministratorModule.StudentFile
         Student GetStudentInfoById(int StudentId);
         //修改学生信息
         void ModifyStduentInfo(Student student);
+        void ModifyStudentInfo1(Student modifyStudent, Student sessionStudent);
         //学生注册
         void StudentRegiste(Student student);
         //学生删除

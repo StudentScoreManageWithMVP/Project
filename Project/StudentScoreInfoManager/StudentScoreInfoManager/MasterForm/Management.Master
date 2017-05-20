@@ -55,7 +55,7 @@
 		</a>
 		<ul class="treeview-menu">
 		  <li><a href="#"><i class="fa fa-circle-o"></i> 学生查找</a></li>
-		  <li><a href="#"><i class="fa fa-circle-o"></i> 学生注册</a></li>
+		  <li><a href="/AdministratorModule/StudentFile/StudentRegisteFile/RegisterView.aspx"><i class="fa fa-circle-o"></i> 学生注册</a></li>
 		</ul>
 	  </li>
       <li class="treeview">

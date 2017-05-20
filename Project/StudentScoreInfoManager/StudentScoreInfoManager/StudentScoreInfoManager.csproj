@@ -68,9 +68,10 @@
     <Content Include="AdministratorModule\NetManageFile\NetManageView.aspx" />
     <Content Include="AdministratorModule\StudentFile\StudentBrowseFile\BrowseView.aspx" />
     <Content Include="AdministratorModule\StudentFile\StudentDeleteFile\StudentDelete.aspx" />
-    <Content Include="AdministratorModule\StudentFile\StudentModifyFile\StudentModify.aspx" />
+    <Content Include="AdministratorModule\StudentFile\StudentModifyFile\ModifyView.aspx" />
+    <Content Include="AdministratorModule\StudentFile\StudentModifyFile\WebForm1.aspx" />
     <Content Include="AdministratorModule\StudentFile\StudentQueryFile\StudentQuery.aspx" />
-    <Content Include="AdministratorModule\StudentFile\StudentRegisteFile\StudentRegiste.aspx" />
+    <Content Include="AdministratorModule\StudentFile\StudentRegisteFile\RegisterView.aspx" />
     <Content Include="Css\AdminiInfoBrowse.css" />
     <Content Include="Css\AdminiInfoModify.css" />
     <Content Include="Css\StudentBrowse.css" />
@@ -236,12 +237,19 @@
       <DependentUpon>StudentDelete.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdministratorModule\StudentFile\StudentModifyFile\IModifyView.cs" />
-    <Compile Include="AdministratorModule\StudentFile\StudentModifyFile\StudentModify.aspx.cs">
-      <DependentUpon>StudentModify.aspx</DependentUpon>
+    <Compile Include="AdministratorModule\StudentFile\StudentModifyFile\ModifyView.aspx.cs">
+      <DependentUpon>ModifyView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdministratorModule\StudentFile\StudentModifyFile\StudentModify.aspx.designer.cs">
-      <DependentUpon>StudentModify.aspx</DependentUpon>
+    <Compile Include="AdministratorModule\StudentFile\StudentModifyFile\ModifyView.aspx.designer.cs">
+      <DependentUpon>ModifyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentModifyFile\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorModule\StudentFile\StudentModifyFile\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdministratorModule\StudentFile\StudentPresenter.cs" />
     <Compile Include="AdministratorModule\StudentFile\StudentQueryFile\IQueryView.cs" />
@@ -253,12 +261,12 @@
       <DependentUpon>StudentQuery.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdministratorModule\StudentFile\StudentRegisteFile\IRegisteView.cs" />
-    <Compile Include="AdministratorModule\StudentFile\StudentRegisteFile\StudentRegiste.aspx.cs">
-      <DependentUpon>StudentRegiste.aspx</DependentUpon>
+    <Compile Include="AdministratorModule\StudentFile\StudentRegisteFile\RegisterView.aspx.cs">
+      <DependentUpon>RegisterView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdministratorModule\StudentFile\StudentRegisteFile\StudentRegiste.aspx.designer.cs">
-      <DependentUpon>StudentRegiste.aspx</DependentUpon>
+    <Compile Include="AdministratorModule\StudentFile\StudentRegisteFile\RegisterView.aspx.designer.cs">
+      <DependentUpon>RegisterView.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdministratorModule\StudentFile\StudentView.cs">
       <SubType>ASPXCodeBehind</SubType>

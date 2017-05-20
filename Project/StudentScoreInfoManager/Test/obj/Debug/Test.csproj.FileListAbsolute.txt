@@ -1,1 +1,2 @@
 E:\课程设计\StudentScoreInfoManager\Test\bin\Debug\Test.exe.config
+E:\课程设计\StudentManagerWithGub\Project\StudentScoreInfoManager\Test\bin\Debug\Test.exe.config

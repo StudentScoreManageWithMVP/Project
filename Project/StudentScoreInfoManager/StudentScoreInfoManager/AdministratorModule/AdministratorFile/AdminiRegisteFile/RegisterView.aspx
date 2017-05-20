@@ -53,7 +53,7 @@
             <br />
         照片:
         <input id="file" runat="server" type="file" name="imageInput" class="input_class" />
-        <asp:Button ID="registerBtn" Text="注册" runat="server" OnClick="registerBtn_Click" CssClass="updateBtn"/>
+        <asp:Button ID="registerBtn" Text="添加" runat="server" OnClick="registerBtn_Click" CssClass="updateBtn"/>
         </form>
     </div>
     <script src="/Script/jquery.min.js" type="text/javascript"></script>

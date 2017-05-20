@@ -72,6 +72,28 @@ namespace StudentScoreInfoManager.AdministratorModule.StudentFile
                 }
         }
         /// <summary>
+        /// 处理修改学生信息的逻辑
+        /// </summary>
+        /// <param name="modifyStudent">从页面接收的修改以后的学生类对象</param>
+        /// <param name="sessionStudent">从session中取的学生类对象</param>
+        public void ModifyStudentInfo1(Student modifyStudent, Student sessionStudent) {
+            Student modifyStu = mdataContext.Student.SingleOrDefault<Student>(s => s.Id == sessionStudent.Id);
+            #region 反射获取修改值
+            System.Reflection.PropertyInfo[] modifyPS = modifyStudent.GetType().GetProperties();//session对象
+            System.Reflection.PropertyInfo[] stuPS = sessionStudent.GetType().GetProperties();//从页面接收的对象
+            System.Reflection.PropertyInfo[] modifyStuPS = modifyStu.GetType().GetProperties();//与数据库有关的对象
+            for (int i = 1; i < stuPS.Length; i++)
+            {
+                var stuValue = stuPS[i].GetValue(sessionStudent);
+                var modifyValue = modifyPS[i].GetValue(modifyStudent);
+                if (stuValue != modifyValue)
+                    modifyStuPS[i].SetValue(modifyStu, modifyValue);
+            }
+            #endregion
+            mdataContext.SubmitChanges();
+            mbaseView.Alert("修改成功");
+        }
+        /// <summary>
         /// 处理学生注册逻辑
         /// </summary>
         /// <param name="student"></param>
